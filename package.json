@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src -d lib",
+    "build:quiet": "babel -q src -d lib",
     "test": "jest",
     "start": "node lib/main.js"
   },
