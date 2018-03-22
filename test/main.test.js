@@ -1,7 +1,7 @@
-import {players} from '../src/main';
+import * as divisionizer from '../src/divisionizer';
 
 const PLAYERS_IN_LEAGUE = 12;
 
 test('right amount of players', () => {
-    expect(players.length).toBe(PLAYERS_IN_LEAGUE);
+    expect(divisionizer.players.length).toBe(PLAYERS_IN_LEAGUE);
 });

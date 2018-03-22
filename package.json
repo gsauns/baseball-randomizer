@@ -6,15 +6,17 @@
   "scripts": {
     "build": "babel src -d lib",
     "test": "jest",
-    "start": "node src/main.js"
+    "start": "node lib/main.js"
   },
   "dependencies": {
-    "babel-preset-env": "^1.6.1"
+    "js-weighted-list": "^0.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2016": "^6.24.1",
     "jest": "^22.4.3",
     "regenerator-runtime": "^0.11.1"
   }
