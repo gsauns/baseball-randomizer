@@ -1,6 +1,7 @@
 'use strict';
+import WeightedList from 'js-weighted-list';
 
-export const players = [
+const leagueMembers = [
     {key: 'Baseball Stars', weight: 1},
     {key: 'Cincinnati Bowties', weight: 2},
     {key: 'Dateline Predators', weight: 3},
@@ -14,4 +15,7 @@ export const players = [
     {key: 'Tread Lightly', weight: 11},
     {key: 'The Ulfberht', weight: 12}
 ];
+
+export const players = new WeightedList(leagueMembers);
+
 
