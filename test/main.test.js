@@ -8,6 +8,11 @@ test('JSON is read', () => {
     expect(league_json).not.toBeNull();
 })
 
+test('initializes', () => {
+    divisionizer.initializeLeague(null, false);
+    expect(divisionizer.players.length).toBe(divisionizer.PLAYERS_IN_LEAGUE);
+});
+
 test('right amount of players in weighted list', () => {
     expect(divisionizer.players.length).toBe(divisionizer.PLAYERS_IN_LEAGUE);
 });
