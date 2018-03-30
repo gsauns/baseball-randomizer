@@ -10,27 +10,26 @@ const divisionOneIndexes = [1, 4, 5, 8, 9, 12];
 const divisionTwoIndexes = [2, 3, 6, 7, 10, 11];
 
 export const PLAYERS_IN_LEAGUE = 12;
-const DEFAULT_WEIGHT_ATTRIBUTE = 'points';
-export let players;
+const DEFAULT_WEIGHT_ATTRIBUTE = 'pointsrank';
+export let players, weightAttribute;
 
 export const initializeLeague = ((attributeToUse, run) => {
     if (!attributeToUse)
         attributeToUse = DEFAULT_WEIGHT_ATTRIBUTE;
+    weightAttribute = attributeToUse;
 
-    console.log('Welcome to the Divisionizer.')
-    console.log('Weight attribute: ' + attributeToUse)
+    console.log('Weight attribute: ' + weightAttribute)
     
     const data = fs.readFileSync('data/league.json');
     const league = JSON.parse(data);
 
     for (let i = 0; i < league.length; i++) {
-        league[i]['weight'] = league[i]['data.' + attributeToUse];
+        league[i]['weight'] = league[i].data[weightAttribute];
     }
-    console.log(league);
 
-    players = new WeightedList(leagueMembers);
+    players = new WeightedList(league);
     if (run)
-        generateDivisions();
+        return generateDivisions();
 });
 
 export const generateDivisions = () => {

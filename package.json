@@ -7,7 +7,11 @@
     "build": "babel src -d lib",
     "build:quiet": "babel -q src -d lib",
     "test": "jest",
-    "start": "node lib/main.js"
+    "start": "babel -q src -d lib; node lib/main.js",
+    "start:no-build": "node lib/main.js",
+    "start:draftrank": "echo rank; babel -q src -d lib; node lib/main.js draftrank;",
+    "start:pointsrank": "echo rank; babel -q src -d lib; node lib/main.js pointsrank;",
+    "start:points": "echo points; babel -q src -d lib; node lib/main.js points;"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
