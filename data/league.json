@@ -1,0 +1,14 @@
+[
+    {"key": "Baseball Stars", "weight": 8, "data": { "owner": "Jason Hughes", "rank": 8, "points": 12874 }},
+    {"key": "Cincinnati Bowties", "weight": 4, "data": { "owner": "Jeff Helvie", "rank": 4, "points": 12370 }},
+    {"key": "Dateline Predators", "weight": 12, "data": { "owner": "Matt Howes", "rank": 12, "points": 14157 }},
+    {"key": "McCann You Dig It?", "weight": 6, "data": { "owner": "Jack Elsey", "rank": 6, "points": 12918 }},
+    {"key": "Miami Gators", "weight": 3, "data": { "owner": "Chris Eckel", "rank": 3, "points": 11952 }},
+    {"key": "New York Meats", "weight": 11, "data": { "owner": "Greg Saunsen", "rank": 11, "points": 13719 }},
+    {"key": "Reinstate Rose", "weight": 1, "data": { "owner": "Chris Gibson", "rank": 1, "points": 11610 }},
+    {"key": "Sons of Pitches", "weight": 7, "data": { "owner": "Jason Johnson", "rank": 7, "points": 11981 }},
+    {"key": "Speling Bee Champs", "weight": 9, "data": { "owner": "Andy Hubbs", "rank": 9, "points": 14144 }},
+    {"key": "SuckItRedBirds", "weight": 2, "data": { "owner": "Judd Hale", "rank": 2, "points": 11772 }},
+    {"key": "Tread Lightly", "weight": 10, "data": { "owner": "Mike Brenner", "rank": 10, "points": 12908 }},
+    {"key": "The Ulfberht", "weight": 5, "data": { "owner": "Sean Griffin", "rank": 5, "points": 12234 }}
+]

@@ -10,6 +10,7 @@
     "start": "node lib/main.js"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "js-weighted-list": "^0.1.1"
   },
   "devDependencies": {
