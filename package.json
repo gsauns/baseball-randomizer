@@ -9,9 +9,9 @@
     "test": "jest",
     "start": "babel -q src -d lib; node lib/main.js",
     "start:no-build": "node lib/main.js",
-    "start:draftrank": "echo rank; babel -q src -d lib; node lib/main.js draftrank;",
-    "start:pointsrank": "echo rank; babel -q src -d lib; node lib/main.js pointsrank;",
-    "start:points": "echo points; babel -q src -d lib; node lib/main.js points;"
+    "start:draftrank": "babel -q src -d lib; node lib/main.js draftrank;",
+    "start:pointsrank": "babel -q src -d lib; node lib/main.js pointsrank;",
+    "start:points": "babel -q src -d lib; node lib/main.js points;"
   },
   "dependencies": {
     "fs": "^0.0.1-security",
