@@ -11,7 +11,7 @@
     "start:no-build": "node lib/main.js",
     "start:draftrank": "babel -q src -d lib; node lib/main.js draftrank;",
     "start:pointsrank": "babel -q src -d lib; node lib/main.js pointsrank;",
-    "start:points": "babel -q src -d lib; node lib/main.js points;"
+    "start:points": "./runbabel -q src -d lib; node lib/main.js points;"
   },
   "dependencies": {
     "fs": "^0.0.1-security",

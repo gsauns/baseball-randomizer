@@ -3,4 +3,4 @@ if [ -n "$1" ]
 then
     run_arg=":${1}"
 fi
-yarn run "start${run_arg}"
+yarn install && yarn run "start${run_arg}"
