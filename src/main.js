@@ -6,7 +6,7 @@ const outputDivision = (num, division) => {
     console.log('');
     console.log('--- DIVISION ' + num + ' ---');
     console.log('------------------');
-    division.forEach(team => console.log(team.key + ', ' + team.data.owner + ' (team weight: ' + team.data[divisionizer.weightAttribute] + ')'));
+    division.forEach(team => console.log(team.key + ', ' + team.data.owner + ' (index: ' + team.random_index + ', team weight: ' + team.data[divisionizer.weightAttribute] + ')'));
     console.log('------------------');
 }
 

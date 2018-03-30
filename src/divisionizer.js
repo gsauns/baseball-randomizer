@@ -38,7 +38,7 @@ export const generateDivisions = () => {
 
     for (let i = 0; i < players.length; i++) {
         let divIndex = i + 1;
-        //console.log(data[i]);
+        data[i]['random_index'] = divIndex;
         divisionOneIndexes.includes(divIndex) ? divisionOne.push(data[i]) : divisionTwo.push(data[i]);
     }
 
